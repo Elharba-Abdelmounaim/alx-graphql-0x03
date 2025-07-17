@@ -38,3 +38,20 @@ alx-rick-and-morty-app/
 │   └── _app.tsx
 └── README.md
 ```
+
+
+## 🐞 ErrorBoundary & ErrorProneComponent
+   - What is ErrorBoundary?
+
+A React class component that catches unexpected errors in React components during client-side rendering and displays a fallback UI instead of crashing the whole app. 
+---
+
+* What we did:
+1. Created an ErrorBoundary component to protect the app from crashing due to errors in child components.
+
+2. Created an ErrorProneComponent that deliberately throws an error when rendered, to test ErrorBoundary.
+
+3. Used ErrorProneComponent inside the main page pages/index.tsx wrapped with ErrorBoundary to catch errors.
+
+4. Disabled server-side rendering (SSR) temporarily in the page using next/dynamic with { ssr: false } because ErrorBoundary does not catch errors during SSR.
+
