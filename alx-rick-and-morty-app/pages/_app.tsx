@@ -1,17 +1,8 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
-import ErrorBoundary from '@/components/ErrorBoundary'
-import { ApolloProvider } from '@apollo/client'
-import client from '@/graphql/apolloClient'  
+import '../sentry.client.config';
+import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <ApolloProvider client={client}>
-      <ErrorBoundary>
-        <Component {...pageProps} />
-      </ErrorBoundary>
-    </ApolloProvider>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
