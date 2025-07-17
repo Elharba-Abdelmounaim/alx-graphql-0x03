@@ -25,6 +25,7 @@ const Home: React.FC = () => {
   const results = data?.episodes.results
   const info = data?.episodes.info
 
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#A3D5E0] to-[#F4F4F4] text-gray-800">
       {/* Header */}
