@@ -1,34 +1,40 @@
-# alx-rick-and-morty-app
+## 📘 Rick and Morty GraphQL App
 
-A web application built with **Next.js** that uses **GraphQL** and **Apollo Client** to fetch data from the **Rick and Morty** API.  
-The project uses **TypeScript**, **ESLint**, and **Tailwind CSS** for code quality and styling.
-
----
-
-## Requirements
-
-- Node.js (preferably latest version)  
-- npm
+A simple React + Next.js application that fetches data from the Rick and Morty GraphQL API using Apollo Client.
 
 ---
 
-## alx-rick-and-morty-app/
+## 🧱 Features
+
+1. 🔍 Fetch and display episodes using GraphQL.
+
+2. 🖼️ Responsive UI built with Tailwind CSS.
+
+3. 🐛 Error handling using a custom ErrorBoundary component.
+
+4. 🔁 Pagination support.
+---
+
+## ⚙️ Setup
+```bash
+git clone https://github.com/your-username/alx-graphql-0x03.git
+cd alx-graphql-0x03/alx-rick-and-morty-app
+npm install
+npm run dev
+
 ```
+
+## 📁 Project Structure
+```
+alx-rick-and-morty-app/
+├── components/
+│   └── ErrorBoundary.tsx
 ├── graphql/
-│ ├── apolloClient.ts # Apollo Client setup for connecting to the Rick and Morty API
-│ └── queries.ts # GraphQL queries
+│   └── queries.ts
+├── lib/
+│   └── apollo-client.ts
 ├── pages/
-│ └── _app.tsx # Main app file wrapping components with ApolloProvider
-├── styles/
-│ └── globals.css # CSS files including Tailwind CSS setup
-├── package.json # Project dependencies and scripts
-└── README.md # Project documentation
+│   └── index.tsx
+│   └── _app.tsx
+└── README.md
 ```
-
-## Setup Instructions
-
-1. Clone the repository.
-2. Navigate to the project directory `alx-rick-and-morty-app`.
-3. Install dependencies:
-   ```bash
-   npm install
